@@ -1,0 +1,14 @@
+.red{
+    color: red;
+}
+
+.bg-yellow{
+    background-color: blue;
+}
+
+#firstdiv{
+    background-color: burlywood;
+}
+
+
+/* The first preference is given to id and then the class like example i have given background color in id and class but it accepts the color given in id but when i remove the background color from id its accepts the color from class*/

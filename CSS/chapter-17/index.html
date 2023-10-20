@@ -1,0 +1,101 @@
+<!-- Selectors:
+1. Element Selector
+2. Class Selector
+3. ID Selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+        /* Element Selector */
+        div{
+            /* background-color: blueviolet; */
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* ID Selector*/
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+
+
+        /* Descendant Selector */
+        /* div  p {
+            color: rgb(0, 255, 68);
+            background-color: rgb(187, 224, 52);
+        } */
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector*/
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: greenyellow;
+        }
+
+        a:active{
+            background-color: rgb(235, 88, 30);
+        }
+
+        a:hover{
+            background-color: rgb(205, 32, 156);
+        }
+
+/* 
+        p:first-child{
+            background-color: aqua;
+        } */
+
+    </style>
+
+</head>
+<body>
+    <!-- <main>
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main> -->
+
+    <div class="red">
+        I am a div
+    </div>
+
+    <div id="green">
+        I am a div
+    </div>
+
+    <div>
+        <p>I am a paragraph inside the first div.</p>
+    </div>
+
+     <!-- Descendant Selector  -->
+    <div>
+        <span>
+            <p>I am a paragraph inside the second div.</p>
+        </span>
+    </div>
+
+    <a href="https://www.google.com">Go To Google</a>
+    <br>
+    <a href="https://www.facebook.com">Go To Facebook</a>
+</body>
+</html>

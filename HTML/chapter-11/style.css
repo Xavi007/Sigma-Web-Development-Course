@@ -1,0 +1,10 @@
+header nav ul {
+    list-style: none; /* Used to remove the bullets: . */
+    padding: 5px;
+    display: flex; /* Makes the list items display horizontally */
+}
+
+header nav li {
+    margin-right: 20px; /* Adjust the spacing between menu items */
+}
+

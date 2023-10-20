@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BoxModel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: rgb(63, 21, 230);
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;  /*It adjusts the size of text + padding + border = 200px as we hv given height 200px, else if we dont give this line it assumes the height of text should be 200px + padding + border */
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;  /*It adjusts the size of text + padding + border = 200px as we hv given height 200px, else if we dont give this line it assumes the height of text should be 200px + padding + border */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>
