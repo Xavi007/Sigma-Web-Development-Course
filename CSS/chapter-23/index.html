@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .box {
+        border: 2px solid blue;
+        display: inline-block;
+        width: 344px;
+        padding: 45px;
+        margin: 34px;
+      }
+      .box1{
+        /* display: none;   while u set display : none the block/space occupied by that class box1 is removed and other block occupies that space*/
+        /*visibility: hidden;  while u set visibility: hidden; it hides the occupies space,  nothing is visible on screen but the space is occupiedd by the block  such that other blocks cannot occupy its space*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">I am a box</div>
+    <div class="box">I am a box</div>
+    <span>I am a good</span>
+    <!-- Grids and flex box-> -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+  </body>
+</html>
